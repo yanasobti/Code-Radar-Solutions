@@ -1,11 +1,14 @@
 #include <stdio.h>
 
-void fun();
+int fun();
 int main() {
     fun();
     return 0;
 }
-void fun(){
+int fun(){
+    int a,b;
+    scanf("%d",&a);
+    scanf("%d",&b);
     if(a>=b){
         printf("True");
     }else{
