@@ -10,9 +10,9 @@ int main() {
     }else if(marks>=70 && marks<80){
         printf("C");
     }else if(marks>=60 && marks<70){
-        printf("D")
+        printf("D");
     }else{
-        printf("F")
+        printf("F");
     }
     return 0;
 }
