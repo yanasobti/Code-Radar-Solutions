@@ -1,15 +1,15 @@
 #include <stdio.h>
 int main() {
-    float a,b;
+    int a,b;
     char ch;
-    scanf("%f %f",&a,&b);
+    scanf("%d %d",&a,&b);
     scanf(" %c",&ch);
     if(ch=='+'){
-        printf("%.6f",a+b);
+        printf("%d",a+b);
     }else if(ch=='-'){
-        printf("%f",a-b);
+        printf("%d",a-b);
     }else if(ch=='*'){
-        printf("%f",a*b);
+        printf("%",a*b);
     }else if(ch=='/'){
         printf("%f",a/b);
     }
