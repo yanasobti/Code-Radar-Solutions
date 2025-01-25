@@ -5,7 +5,7 @@ int main() {
     scanf("%f %f",&a,&b);
     scanf(" %c",&ch);
     if(ch=='+'){
-        printf("%f",a+b);
+        printf("%.6f",a+b);
     }else if(ch=='-'){
         printf("%f",a-b);
     }else if(ch=='*'){
