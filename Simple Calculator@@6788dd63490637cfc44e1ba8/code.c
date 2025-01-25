@@ -6,16 +6,16 @@ int main() {
     scanf(" %c",&ch);
     switch(ch){
         case '+':
-        printf("%f",a+b);
+        printf("%d",a+b);
         break;
         case '-':
-        printf("%f",a-b);
+        printf("%d",a-b);
         break;
         case '*':
-        printf("%f",a*b);
+        printf("%d",a*b);
         break;
         case '/':
-        printf("%f",a/b);
+        printf("%d",a/b);
     }
     return 0;
 }
