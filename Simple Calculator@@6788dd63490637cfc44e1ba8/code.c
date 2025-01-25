@@ -1,21 +1,21 @@
 #include <stdio.h>
 int main() {
-    int a,b;
+    float a,b;
     char ch;
-    scanf("%d %d",&a,&b);
+    scanf("%f %f",&a,&b);
     scanf(" %c",&ch);
     switch(ch){
         case '+':
-        printf("%d",a+b);
+        printf("%f",a+b);
         break;
         case '-':
-        printf("%d",a-b);
+        printf("%f",a-b);
         break;
         case '*':
-        printf("%d",a*b);
+        printf("%f",a*b);
         break;
         case '/':
-        printf("%d",a/b);
+        printf("%f",a/b);
     }
     return 0;
 }
