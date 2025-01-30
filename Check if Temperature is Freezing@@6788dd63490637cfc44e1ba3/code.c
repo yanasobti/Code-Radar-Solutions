@@ -6,7 +6,7 @@ int main() {
     if(a<0){
         printf("Freezing");
     }else if(a==0){
-        printf("Freezing");
+        printf("Above Freezing");
     }
     return 0;
 }
