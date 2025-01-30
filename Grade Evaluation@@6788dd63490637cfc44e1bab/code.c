@@ -13,6 +13,8 @@ int main() {
         printf("Below Average");
     }else if(a=='F'){
         printf("Fail");
+    }else{
+        printf("error");
     }
     return 0;
 }
