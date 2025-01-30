@@ -14,7 +14,7 @@ int main() {
     }else if(a=='F'){
         printf("Fail");
     }else{
-        printf("error");
+        printf("Invalid");
     }
     return 0;
 }
