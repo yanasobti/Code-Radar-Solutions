@@ -12,7 +12,7 @@ int main() {
     }else if(msb==0){
         printf("Not Set");
     }else{
-        printf("Set");
+        printf("Not Set");
     }
     return 0;
 }
