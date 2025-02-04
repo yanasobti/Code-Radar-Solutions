@@ -3,7 +3,7 @@
 int main() {
     int a,msb=1;
     scanf("%d",&a);
-    while(n>1){
+    while(a>1){
         a>>=1;
         msb<<=a;    //keeps track of mcb
     }if(msb==1){
