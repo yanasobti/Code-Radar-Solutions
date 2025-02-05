@@ -1,16 +1,19 @@
 #include <stdio.h>
 
 int main() {
-    int a,msb=1;
-    scanf("%d",&a);
+    int a, msb = 1;
+    scanf("%d", &a);
 
-    while(a>1){
-        a>>=1;
-        msb<<=a;    //keeps track of mcb
-    }if(msb & a){
-        printf("Set");
-    }else{
-        printf("Not Set");
+    while (msb <= a) {
+        msb <<= 1;
     }
+    msb >>= 1; // Get back to the last valid MSB
+
+    if (a & msb) {
+        printf("Set\n");
+    } else {
+        printf("Not Set\n");
+    }
+
     return 0;
 }
