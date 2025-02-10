@@ -10,6 +10,7 @@ int main() {
         for(int col=1;col<=row;col++){
             printf("%d ",col);
         }
-    }printf("\n");
+        printf("\n");
+    }
     return 0;
 }
