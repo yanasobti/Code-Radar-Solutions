@@ -2,7 +2,7 @@
 
 int main() {
     int a;
-    int msb_mask = 1 << (sizeof(num) * 8 - 1);
+    int msb_mask = 1 << (sizeof(a) * 8 - 1);
     scanf("%d", &a);
     if((msb_mask & a)!=0){
         printf("Set");
