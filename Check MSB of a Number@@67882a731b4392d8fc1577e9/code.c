@@ -2,9 +2,8 @@
 
 int main() {
     int a;
-    scanf("%d", &a);
     int msb_mask = 1 << (sizeof(num) * 8 - 1);
-
+    scanf("%d", &a);
     if((msb_mask & a)!=0){
         printf("Set");
     }else{
