@@ -1,19 +1,14 @@
 #include <stdio.h>
 
 int main() {
-    int a, msb = 1;
+    int a;
     scanf("%d", &a);
+    int msb_mask = 1 << (sizeof(num) * 8 - 1);
 
-    while (msb <= a) {
-        msb <<= 1;
+    if((msb_mask & a)!=0){
+        printf("Set");
+    }else{
+        printf("Not Set");
     }
-    msb >>= 1; // Get back to the last valid MSB
-
-    if (a & msb) {
-        printf("Set\n");
-    } else {
-        printf("Not Set\n");
-    }
-
     return 0;
 }
