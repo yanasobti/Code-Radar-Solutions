@@ -1,7 +1,11 @@
 #include<stdio.h>
+int getlsb(int num){
+    return num%2;
+}
+
 int main(){
-    int a,b;
+    int a;
     scanf("%d",&a);
-    b= a & - (a-1);
-    printf("%d",b);
+
+    printf("%d",getlsb(num));
 }
