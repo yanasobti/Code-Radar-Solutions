@@ -4,8 +4,8 @@ int getlsb(int num){
 }
 
 int main(){
-    int a;
-    scanf("%d",&a);
+    int num;
+    scanf("%d",&num);
 
     printf("%d",getlsb(num));
 }
