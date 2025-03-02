@@ -11,7 +11,7 @@ void checksort(int n, int arr[]){
     if(sorted){
         printf("Sorted");
     }else{
-        printf("Unsorted");
+        printf("Not Sorted");
     }
 }
 
