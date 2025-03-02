@@ -1,3 +1,5 @@
+#include<stdio.h>
+
 void checksort(int n, int arr[]){
     int sorted = 1; 
     for (int i = 0; i < n - 1; i++) {
