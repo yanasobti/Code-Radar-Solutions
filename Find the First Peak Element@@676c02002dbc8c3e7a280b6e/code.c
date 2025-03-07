@@ -30,7 +30,7 @@ int main() {
             printf("%d\n", curr);
             return 0;
         }
-        return -1
+        return -1;
         prev = curr;
         curr = next;
     }
