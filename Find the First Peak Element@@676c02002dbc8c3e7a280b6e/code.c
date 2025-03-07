@@ -36,7 +36,5 @@ int main() {
     }
     printf("%d\n", curr);
     return 0;
-
-    if 
 }
 
