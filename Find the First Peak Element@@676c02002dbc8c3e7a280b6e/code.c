@@ -26,7 +26,7 @@ int main() {
     for (int i = 2; i < n; i++) {
         scanf("%d", &next);
 
-        if (curr >= prev && curr >= next) {
+        if (curr > prev && curr > next) {
             printf("%d\n", curr);
             return 0;
         }
@@ -38,7 +38,7 @@ int main() {
      if(prev==curr){
         printf("-1");
     }
-    
+
     printf("%d\n", curr);
 
     return 0;
