@@ -26,14 +26,17 @@ int main() {
     for (int i = 2; i < n; i++) {
         scanf("%d", &next);
 
-        if (curr >= prev && curr >= next) {
+        if (curr > prev && curr > next) {
             printf("%d\n", curr);
             return 0;
         }
+        return -1
         prev = curr;
         curr = next;
     }
     printf("%d\n", curr);
     return 0;
+
+    if 
 }
 
