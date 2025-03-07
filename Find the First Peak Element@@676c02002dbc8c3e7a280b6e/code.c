@@ -18,7 +18,7 @@ int main() {
 
     scanf("%d", &curr);
 
-    if (prev >= curr) { 
+    if (prev >= curr) { // Check if first element is a peak
         printf("%d\n", prev);
         return 0;
     }
@@ -26,14 +26,16 @@ int main() {
     for (int i = 2; i < n; i++) {
         scanf("%d", &next);
 
-        if (curr > prev && curr > next) {
+        if (curr >= prev && curr >= next) { // Found peak
             printf("%d\n", curr);
             return 0;
         }
-        return -1;
+
         prev = curr;
         curr = next;
     }
+
+    // If no peak found, last element is a peak
     printf("%d\n", curr);
     return 0;
 }
