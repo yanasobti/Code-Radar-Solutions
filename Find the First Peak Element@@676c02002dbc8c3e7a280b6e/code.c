@@ -1,25 +1,37 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int Peakelement(int n,int arr[]){
-    if (n == 1 || arr[0] >= arr[1]){
+int main() {
+    int n;
+    scanf("%d", &n);
+
+    if (n < 1){
+        return 1;
+    }
+
+    int prev, curr, next;
+    scanf("%d", &prev);
+
+    if (n == 1) { 
+        printf("%d\n", prev);
         return 0;
     }
-    if (arr[n - 1] >= arr[n - 2]){
-        return n - 1;
+
+    scanf("%d", &curr);
+
+    if (prev >= curr) { 
+        printf("%d\n", prev);
+        return 0;
     }
 
-    for (int i = 1; i < n - 1; i++){
-        if (arr[i] >= arr[i - 1] && arr[i] >= arr[i + 1]) {
-            return i;
+    for (int i = 2; i < n; i++) {
+        scanf("%d", &next);
+
+        if (curr >= prev && curr >= next) {
+            printf("%d\n", curr);
+            return 0;
         }
+        prev = curr;
+        curr = next;
     }
 }
-int main(){
-    int n;
-    scanf("%d",&n);
-    int arr[n];
-    for(int i=0;i<n;i++){
-        scanf("%d",&arr[i]);
-    }
-    printf("%d",Peakelement(n,arr));
-}
+
