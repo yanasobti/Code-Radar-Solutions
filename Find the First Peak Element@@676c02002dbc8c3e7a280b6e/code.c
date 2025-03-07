@@ -33,5 +33,7 @@ int main() {
         prev = curr;
         curr = next;
     }
+    printf("%d\n", curr);
+    return 0;
 }
 
