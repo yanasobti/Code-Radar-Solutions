@@ -24,6 +24,7 @@ int main() {
     }
     if(curr==prev){
         printf("-1");
+        return 0;
     }
 
     for (int i = 2; i < n; i++) {
