@@ -18,9 +18,12 @@ int main() {
 
     scanf("%d", &curr);
 
-    if (prev >= curr) { 
+    if (prev > curr) { 
         printf("%d\n", prev);
         return 0;
+    }
+    if(prev==curr){
+        printf("-1");
     }
 
     for (int i = 2; i < n; i++) {
@@ -34,11 +37,6 @@ int main() {
         prev = curr;
         curr = next;
     }
-
-     if(prev==curr){
-        printf("-1");
-    }
-
     printf("%d\n", curr);
 
     return 0;
