@@ -36,8 +36,8 @@ int main() {
     }
     printf("%d\n", curr);
 
-    if(prev==current){
-        printf("1");
+    if(prev==curr){
+        printf("-1");
     }
     return 0;
 }
