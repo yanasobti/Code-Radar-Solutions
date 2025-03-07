@@ -4,11 +4,11 @@ int main() {
     int n;
     scanf("%d", &n);
 
-    if (n < 1) return 1; 
+    if (n < 1) return 1;
 
     int prev, curr, next;
-    int peak = -1, allSame = 1; 
-    
+    int peak = -1, foundPeak = 0; 
+
     scanf("%d", &prev);
 
     if (n == 1) { 
@@ -17,45 +17,31 @@ int main() {
     }
 
     scanf("%d", &curr);
-    
-    if (prev != curr) {
-        allSame = 0; 
-    }
 
-    if (prev > curr) {
+    if (prev > curr) { // Check if the first element is a peak
         peak = prev;
+        foundPeak = 1;
     }
 
     for (int i = 2; i < n; i++) {
         scanf("%d", &next);
 
-        if (curr != prev) {
-            allSame = 0; 
-        }
-
-        if (curr > prev && curr > next) { 
-            if (peak != -1) { 
+        if (curr > prev && curr > next) { // Check for peak
+            if (foundPeak) { // If a peak was already found, return -1
                 printf("-1\n");
                 return 0;
             }
             peak = curr;
+            foundPeak = 1;
         }
 
         prev = curr;
         curr = next;
     }
 
-    if (curr != prev) {
-        allSame = 0;
-    }
-
-    if (allSame) { 
-        printf("-1\n");
-        return 0;
-    }
-
+    // Check if the last element is a peak
     if (curr > prev) {
-        if (peak != -1) { 
+        if (foundPeak) {
             printf("-1\n");
             return 0;
         }
@@ -65,6 +51,3 @@ int main() {
     printf("%d\n", peak);
     return 0;
 }
-
-
-
