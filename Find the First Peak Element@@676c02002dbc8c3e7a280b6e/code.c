@@ -22,7 +22,7 @@ int main() {
         printf("%d\n", prev);
         return 0;
     }
-    if(curr==next){
+    if(curr==prev){
         printf("-1");
     }
 
