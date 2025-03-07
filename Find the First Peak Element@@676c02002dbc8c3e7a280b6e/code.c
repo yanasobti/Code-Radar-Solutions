@@ -34,11 +34,13 @@ int main() {
         prev = curr;
         curr = next;
     }
-    printf("%d\n", curr);
 
-    if(prev==curr){
+     if(prev==curr){
         printf("-1");
     }
+    
+    printf("%d\n", curr);
+
     return 0;
 }
 
