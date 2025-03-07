@@ -36,7 +36,7 @@ int main() {
     }
     printf("%d\n", curr);
 
-    if(peak==current){
+    if(prev==current){
         printf("1");
     }
     return 0;
