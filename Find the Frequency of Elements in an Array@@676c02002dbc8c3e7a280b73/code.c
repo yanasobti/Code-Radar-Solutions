@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int Freq(int n,arr[]){
+int Freq(int n,int arr[]){
     int count=0;
     for (int i = 0; i < n; i++) {
         if (arr[i] == num) {
