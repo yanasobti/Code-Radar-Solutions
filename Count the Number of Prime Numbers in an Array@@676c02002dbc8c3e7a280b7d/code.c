@@ -26,5 +26,5 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    printf("%d",CheckPrime(n,arr))
+    printf("%d",CheckPrime(n,arr));
 }
