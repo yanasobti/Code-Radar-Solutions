@@ -2,7 +2,7 @@
 
 int SumOfDigits(int n,int arr[]){
     for(int i=0;i<n;i++){
-        int num=arr[i];
+        int num=abs(arr[i]);
         int sum = 0;
         while (num > 0) {
             sum += num % 10;  
