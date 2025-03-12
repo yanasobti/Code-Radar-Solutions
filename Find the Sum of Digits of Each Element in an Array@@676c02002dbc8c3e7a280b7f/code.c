@@ -9,7 +9,7 @@ int SumOfDigits(int n,int arr[]){
             num /= 10;        
         }
 
-        printf("%d",sum);
+        printf("%d ",sum);
     }
 }
 
