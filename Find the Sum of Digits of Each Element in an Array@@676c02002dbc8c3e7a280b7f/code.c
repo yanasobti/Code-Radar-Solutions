@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 
 int SumOfDigits(int n,int arr[]){
     for(int i=0;i<n;i++){
