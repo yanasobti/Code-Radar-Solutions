@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 int MaxProd(int n,int arr[]){
     int num;
     for(int i=0;i<n;i++){
