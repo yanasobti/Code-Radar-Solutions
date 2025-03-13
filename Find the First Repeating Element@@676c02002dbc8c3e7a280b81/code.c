@@ -8,6 +8,7 @@ int ReapeatingEl(int n,int arr[]){
             }
         }
     }
+    return -1;
 }
 
 int main(){
@@ -17,5 +18,10 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    printf("%d",ReapeatingEl(n,arr));
+    result=ReapeatingEl(arr,n);
+    if(result!=-1){
+        printf("-1");
+    }else{
+        printf("%d",result);
+    }
 }
