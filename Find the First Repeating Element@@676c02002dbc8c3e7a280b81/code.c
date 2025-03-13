@@ -18,8 +18,8 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    result=ReapeatingEl(arr,n);
-    if(result!=-1){
+    int result=ReapeatingEl(arr,n);
+    if(result == -1){
         printf("-1");
     }else{
         printf("%d",result);
