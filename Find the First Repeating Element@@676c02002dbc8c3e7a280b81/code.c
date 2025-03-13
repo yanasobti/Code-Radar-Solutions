@@ -3,7 +3,7 @@ int ReapeatingEl(int n,int arr[]){
     for(int i=0;i<n;i++){
         for(int j=i+1;j<n;j++){
             if(arr[i]==arr[j]){
-                repeated_el=arr[i];
+                int repeated_el=arr[i];
                 return repeated_el;
             }
         }
