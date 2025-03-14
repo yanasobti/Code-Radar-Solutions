@@ -1,8 +1,8 @@
 #include<stdio.h>
 int MaxFreq(int n,int arr[]){
     int maxFreq = 0, maxElem = arr[0];
-    int count=1;
     for(int i=0;i<n;i++){
+        int count=1;
         for(int j=i+1;j<n;j++){
             if(arr[i]==arr[j]){
                 count++;
