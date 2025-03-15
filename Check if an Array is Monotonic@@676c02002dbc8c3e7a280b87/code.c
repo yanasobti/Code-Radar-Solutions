@@ -16,7 +16,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
 
-    if(IsMonotonic==1){
+    if(IsMonotonic(n,arr)==1){
         printf("YES");
     }else(
         printf("NO");
