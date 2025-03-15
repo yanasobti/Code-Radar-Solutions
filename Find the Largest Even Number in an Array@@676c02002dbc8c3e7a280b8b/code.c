@@ -1,11 +1,9 @@
 #include<stdio.h>
 int fun(int n,int arr[]){
-    int max=arr[0];
+    int max=-1;
     for(int i=0;i<n;i++){
-        if(arr[i]%2==0 && arr[i]>max){
+        if(arr[i]%2==0 && arr[i]>max || max==-1){
             max=arr[i];
-        }else{
-            return -1;
         }
     }
     return max;
@@ -18,5 +16,11 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    printf("%d",fun(n,arr));
+    int result = fun(n, arr);
+    if (result == -1) {
+        printf("-1");
+    } else {
+        printf("%d", result);
+    }
+
 }
