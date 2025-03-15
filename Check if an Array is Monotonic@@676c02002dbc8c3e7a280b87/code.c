@@ -18,7 +18,7 @@ int main(){
 
     if(IsMonotonic(n,arr)==1){
         printf("YES");
-    }else(
+    }else{
         printf("NO");
-    )
+    }
 }
