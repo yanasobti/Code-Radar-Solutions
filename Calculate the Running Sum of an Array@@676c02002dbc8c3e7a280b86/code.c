@@ -10,7 +10,7 @@ int main(){
     scanf("%d",&n);
     int arr[n];
     for(int i=0;i<n;i++){
-        scamf("%d",&arr[i]);
+        scanf("%d",&arr[i]);
     }
 
     CalSum(n,arr);
