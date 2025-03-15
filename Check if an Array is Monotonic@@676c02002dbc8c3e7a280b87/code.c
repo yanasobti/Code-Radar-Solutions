@@ -1,11 +1,13 @@
 #include<stdio.h>
 int IsMonotonic(int n, int arr[]){
-    for(int i=0;i<n;i++){
-        if(arr[i]>arr[i-1] || arr[i]>arr[i-1] || arr[i]!=arr[i-1]){
-            return 1;
+    for (int i = 1; i < n; i++) {
+        if (arr[i] > arr[i - 1]) {
+            decreasing = 0;  // Not decreasing
+        } else if (arr[i] < arr[i - 1]) {
+            increasing = 0;  // Not increasing
         }
     }
-    return 0;
+    return (increasing || decreasing); 
 }
 
 int main(){
@@ -16,7 +18,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
 
-    if(IsMonotonic(n,arr)==1){
+    if(IsMonotonic(n,arr)){
         printf("YES");
     }else{
         printf("NO");
