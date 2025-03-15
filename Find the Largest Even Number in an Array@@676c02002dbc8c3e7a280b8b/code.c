@@ -4,7 +4,9 @@ int fun(int n,int arr[]){
     for(int i=0;i<n;i++){
         if(arr[i]%2==0 && arr[i]>max){
             max=arr[i];
-        }
+        }else(
+            return -1
+        )
     }
     return max;
 }
