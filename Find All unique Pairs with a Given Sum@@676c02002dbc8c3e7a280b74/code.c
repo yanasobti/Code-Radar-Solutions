@@ -4,7 +4,7 @@ int SumOfPair(int n,int a,int arr[]){
         for(int j=0;j<n;j++){
             if(arr[i]+arr[j]==a){
                 printf("%d %d\n",arr[i],arr[j]);
-                return ;
+                return;
             }
         } 
     }
