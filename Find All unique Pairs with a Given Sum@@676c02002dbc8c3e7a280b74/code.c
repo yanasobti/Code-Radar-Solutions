@@ -6,8 +6,7 @@ void SumOfPair(int n, int a, int arr[]) {
         for (int j = i + 1; j < n; j++) {  
             if (arr[i] + arr[j] == a) {
                 printf("%d %d\n", arr[i], arr[j]);
-                found = 1; 
-                return;    
+                found = 1;   
             }
         }
     }
