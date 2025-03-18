@@ -1,19 +1,19 @@
 #include<stdio.h>
 int MaxFreq(int n,int arr[]){
-    int maxFreq = 0, mostFrequent = arr[0];
-    for (int i = 0; i < n; i++) {
-        int count = 1; 
-        for (int j = i + 1; j < n; j++) {
-            if (arr[i] == arr[j]) {
+    int maxFreq = 0, maxElem = arr[0];
+    for(int i=0;i<n;i++){
+        int count=1;
+        for(int j=i+1;j<n;j++){
+            if(arr[i]==arr[j]){
                 count++;
             }
         }
         if (count > maxFreq) {
             maxFreq = count;
-            mostFrequent = arr[i];
+            maxElem = arr[i];
         }
     }
-    return mostFrequent;
+    return maxElem;
 }
 
 int main(){
@@ -23,5 +23,6 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
+
     printf("%d",MaxFreq(n,arr));
 }
