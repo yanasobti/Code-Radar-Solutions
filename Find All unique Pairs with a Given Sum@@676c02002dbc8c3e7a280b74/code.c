@@ -1,15 +1,20 @@
 #include <stdio.h>
 
 void SumOfPair(int n, int a, int arr[]) {
-    int found = 0; 
     for (int i = 0; i < n; i++) {
         for (int j = i + 1; j < n; j++) {  
             if (arr[i] + arr[j] == a) {
                 printf("%d %d\n", arr[i], arr[j]);
-                found = 1;  
+                while(arr[j]==arr[j+1]){
+                    j++;
+                }
             }
         }
+        while(arr[i]==arr[i+1]){
+            i++;
+        }
     }
+    return 0;
 }
 
 int main() {
