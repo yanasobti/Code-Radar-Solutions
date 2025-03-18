@@ -14,7 +14,6 @@ void SumOfPair(int n, int a, int arr[]) {
             i++;
         }
     }
-    return 0;
 }
 
 int main() {
