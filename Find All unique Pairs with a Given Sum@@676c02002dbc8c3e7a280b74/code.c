@@ -1,5 +1,5 @@
 #include<stdio.h>
-void SumOfPair(int n,int a,int arr[]){
+int SumOfPair(int n,int a,int arr[]){
     for(int i=0;i<n;i++){
         for(int j=0;j<n;j++){
             if(arr[i]+arr[j]==a){
@@ -16,5 +16,5 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    SumOfPair(n,a,arr);
+    printf("%d",SumOfPair(n,a,arr));
 }
