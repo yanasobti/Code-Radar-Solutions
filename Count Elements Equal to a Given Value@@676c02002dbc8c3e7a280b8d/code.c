@@ -1,7 +1,7 @@
 #include<stdio.h>
 int fun(int n,int a,int arr[]){
-    for (int i = 0; i < n; i++) {
-        int count = 1; 
+    int count=0;
+    for (int i = 0; i < n; i++) { 
         for (int j = i + 1; j < n; j++) {
             if (arr[i] == a) {
                 count++;
