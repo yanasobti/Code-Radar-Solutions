@@ -13,13 +13,15 @@ void SumOfPair(int n, int a, int arr[]) {
 }
 
 int main() {
-    int n, a;
-    scanf("%d %d", &n, &a);
+    int n;
+    scanf("%d", &n);
     int arr[n];
 
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
+    scanf("%d",&a);
+    
     SumOfPair(n, a, arr);
     
     return 0;
