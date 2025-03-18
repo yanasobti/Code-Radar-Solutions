@@ -10,10 +10,6 @@ void SumOfPair(int n, int a, int arr[]) {
             }
         }
     }
-
-    if (!found) {
-        printf(" ");
-    }
 }
 
 int main() {
