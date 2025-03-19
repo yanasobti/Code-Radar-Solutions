@@ -20,6 +20,7 @@ int main(){
     }
     SortArray(n,arr);
     int min=arr[1]-arr[0];
+    int num1 = arr[0], num2 = arr[1];
     for(int i=0;i<n;i++){
         for(int j=i+1;j<n;j++){
             int diff=arr[j]-arr[i];
