@@ -25,10 +25,12 @@ int main(){
             int diff=arr[j]-arr[i];
             if(diff<min){
                 min=diff;
+                num1=arr[i];
+                num2=arr[j];
             }
         }
     }
-    printf("%d %d",arr[i],arr[j]);
+    printf("%d %d",num1,num2);
 
-    return 0
+    return 0;
 }
