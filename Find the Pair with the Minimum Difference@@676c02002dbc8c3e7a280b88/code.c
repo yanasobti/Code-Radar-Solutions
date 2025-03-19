@@ -28,6 +28,8 @@ int main(){
                 min=diff;
                 num1=arr[i];
                 num2=arr[j];
+            }else{
+                printf("-1")
             }
         }
     }
