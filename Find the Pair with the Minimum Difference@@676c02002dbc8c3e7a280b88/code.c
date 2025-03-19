@@ -29,7 +29,7 @@ int main(){
                 num1=arr[i];
                 num2=arr[j];
             }else{
-                printf("-1")
+                printf("-1");
             }
         }
     }
