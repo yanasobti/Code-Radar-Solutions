@@ -19,6 +19,9 @@ int main(){
         scanf("%d",&arr[i]);
     }
     SortArray(n,arr);
+    if(n<=1){
+        printf("-1");
+    }
     int min=arr[1]-arr[0];
     int num1 = arr[0], num2 = arr[1];
     for(int i=0;i<n;i++){
@@ -28,8 +31,6 @@ int main(){
                 min=diff;
                 num1=arr[i];
                 num2=arr[j];
-            }else{
-                printf("-1");
             }
         }
     }
