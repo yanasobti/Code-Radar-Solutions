@@ -21,6 +21,8 @@ int main(){
     SortArray(n,arr);
     if(n<=1){
         printf("-1");
+        
+        return 0;
     }
     int min=arr[1]-arr[0];
     int num1 = arr[0], num2 = arr[1];
