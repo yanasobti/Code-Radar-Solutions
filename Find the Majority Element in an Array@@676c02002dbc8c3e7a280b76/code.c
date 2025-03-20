@@ -11,7 +11,7 @@ int Maxelement(int n,int arr[]){
         if(count>maxfreq){
         maxfreq=count;
         maxelement=arr[i];
-        }else if(count==maxfreq || maxfreq>n/2){
+        }else if(count==maxfreq){
             maxelement=-1;
         }
     }
