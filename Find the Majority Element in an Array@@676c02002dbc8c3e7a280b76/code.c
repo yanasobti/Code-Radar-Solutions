@@ -13,6 +13,10 @@ void Maxelement(int n,int arr[]){
     if(count>maxfreq){
         maxfreq=count;
         maxelement=arr[i];
+
+        printf("%d",maxelement);
+    }else{
+        printf("-1");
     }
     // return maxelement;
 
