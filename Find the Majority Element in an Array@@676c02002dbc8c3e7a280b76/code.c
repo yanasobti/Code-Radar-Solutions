@@ -15,7 +15,7 @@ int Maxelement(int n,int arr[]){
             maxelement=-1;
         }
     }
-    return maxelement;
+    return (maxfreq>n/2) ? maxelement : -1;
 
 }
 
