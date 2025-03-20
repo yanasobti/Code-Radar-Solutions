@@ -11,11 +11,11 @@ int Maxelement(int n,int arr[]){
         if(count>maxfreq){
         maxfreq=count;
         maxelement=arr[i];
-        }else if(count==maxfreq ){
+        }else if(count==maxfreq || maxfreq>n/2){
             maxelement=-1;
         }
     }
-    return (maxfreq > n / 2) ? maxelement : -1;
+    return maxelement;
 
 }
 
