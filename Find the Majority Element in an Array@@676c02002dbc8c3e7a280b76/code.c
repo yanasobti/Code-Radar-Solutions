@@ -1,6 +1,6 @@
 #include<stdio.h>
 int Maxelement(int n,int arr[]){
-    int maxfreq=0,maxelement=arr[0],count;
+    int maxfreq=0,maxelement=arr[0],count,i;
     for(int i=0;i<n;i++){
         int count=1;
         for(int j=i+1;j<n;j++){
