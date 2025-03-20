@@ -1,5 +1,5 @@
 #include<stdio.h>
-void Maxelement(int n,int arr[]){
+int Maxelement(int n,int arr[]){
     int maxfreq=0,maxelement=arr[0];
     for(int i=0;i<n;i++){
         int count=1;
@@ -11,8 +11,6 @@ void Maxelement(int n,int arr[]){
         if(count>maxfreq){
         maxfreq=count;
         maxelement=arr[i];
-
-        printf("%d",maxelement);
         }
     }
 
