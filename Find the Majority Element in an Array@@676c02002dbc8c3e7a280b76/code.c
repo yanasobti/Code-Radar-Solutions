@@ -1,6 +1,6 @@
 #include<stdio.h>
 void Maxelement(int n,int arr[]){
-    int maxfreq=0,maxelement=arr[0],count,i;
+    int maxfreq=0,maxelement=arr[0];
     for(int i=0;i<n;i++){
         int count=1;
         for(int j=i+1;j<n;j++){
@@ -8,17 +8,15 @@ void Maxelement(int n,int arr[]){
                 count++;
             }
         }
-    }
-
-    if(count>maxfreq){
+        if(count>maxfreq){
         maxfreq=count;
         maxelement=arr[i];
 
         printf("%d",maxelement);
-    }else{
-        printf("-1");
+        }
     }
-    // return maxelement;
+
+    return maxelement;
 
 }
 
@@ -29,7 +27,7 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    Maxelement(n,arr);
+    printf("%d",Maxelement(n,arr));
 
     return 0;
 }
