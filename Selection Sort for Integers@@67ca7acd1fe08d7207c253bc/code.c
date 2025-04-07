@@ -1,4 +1,4 @@
-void selectionSort(int n,int arr[]){
+void selectionSort(int arr[],int n){
     int temp;
     for(int i=0;i<n;i++){
         int flag=0;
@@ -9,7 +9,8 @@ void selectionSort(int n,int arr[]){
                 arr[j+1]=temp;
                 flag=1;
             }
-        }if(flag==0){
+        }
+        if(flag==0){
             break;
         }
     }
