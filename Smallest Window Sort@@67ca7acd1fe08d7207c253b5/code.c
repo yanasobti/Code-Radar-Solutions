@@ -5,6 +5,7 @@ int findUnsortedSubarray(int arr[],int n){
         start=i;
         break;
         }
+    }
 
     for(int i=0;i<n-1;i++){    //index breaking from the right
         if(arr[j]>arr[j+1]){
@@ -19,3 +20,4 @@ int findUnsortedSubarray(int arr[],int n){
 
     return end-start+1 //lenth of the subarray
 }
+
