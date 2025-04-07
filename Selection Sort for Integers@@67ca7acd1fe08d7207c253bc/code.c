@@ -15,3 +15,9 @@ void selectionSort(int arr[],int n){
         }
     }
 }
+
+void printArray(arr,n){
+    for(int i=0;i<n;i++){
+        printf("%d",arr[i]);
+    }
+}
